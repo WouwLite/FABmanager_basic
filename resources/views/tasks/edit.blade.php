@@ -67,7 +67,7 @@
 
                         {!! Form::open(array('class' => 'form-inline pull-right', 'method' => 'DELETE', 'route' => array('tasks.destroy', $task->id))) !!}
                             {{ method_field('DELETE') }}
-                            {{Form::button('<span class="fa fa-trash fa-fw" aria-hidden="true"></span> <span class="hidden-xxs">Verwijderen</span> <span class="hidden-sm hidden-xs">Bestelling</span>', array('type' => 'submit', 'class' => 'btn btn-danger'))}}
+                            {{Form::button('<span class="fa fa-trash fa-fw" aria-hidden="true"></span> <span class="hidden-xxs">Verwijderen</span> <span class="hidden-sm hidden-xs">Bestelling</span>', array('type' => 'submit', 'class' => 'btn btn-sm btn-danger'))}}
                         {!! Form::close() !!}
 
                     </div>
