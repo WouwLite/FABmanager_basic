@@ -5,9 +5,11 @@
 
         @if ($task->completed === 1)
 
-            <span class="label label-success">
-                Afgeleverd
-            </span>
+            <a href="{{ route('tasks.edit', $task->id) }}">
+                <span class="label label-success">
+                    Afgeleverd
+                </span>
+            </a>
 
         @else
 
@@ -55,6 +57,6 @@
 
     <!-- Task Time -->
     <!-- <td class="table-text">
-        {{ $task->updated_at }}
+{{--        {{ $task->updated_at }}--}}
     </td> -->
 </tr>
