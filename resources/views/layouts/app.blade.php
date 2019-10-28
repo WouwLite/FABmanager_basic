@@ -48,7 +48,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="https://cdn.wouwlite.eu/bckstage.nl/logo/bckstage-black.png" alt="Bckstage FAB" height="50px">
+                        <img src="https://cdn.wouwlite.eu/bckstage.nl/logo/bckstage-black.png" alt="Bckstage FAB" height="25px">
                     </a>
                 </div>
 
