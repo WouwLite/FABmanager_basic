@@ -21,8 +21,8 @@
 
     <!-- Task Edit Icon -->
     <td>
-        <a href="{{ route('tasks.edit', $task->id) }}" class="pull-right">
-            <span class="fa fa-pencil fa-fw label label-default" aria-hidden="true"></span>
+        <a href="{{ route('tasks.edit', $task->id) }}">
+            <span class="fa fa-pencil fa-fw" aria-hidden="true"></span>
             <span class="sr-only">Aanpassen</span>
         </a>
     </td>
