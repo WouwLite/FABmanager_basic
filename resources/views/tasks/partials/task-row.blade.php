@@ -11,9 +11,11 @@
 
         @else
 
-            <span class="label label-danger">
-                Open
-            </span>
+            <a href="{{ route('tasks.edit', $task->id) }}">
+                <span class="label label-danger">
+                    Open
+                </span>
+            </a>
 
         @endif
 
@@ -25,8 +27,6 @@
             <span class="label label-info">
                 Aanpassen
             </span>
-            <span class="fa fa-pencil fa-fw" aria-hidden="true"></span>
-            <span class="sr-only">Aanpassen</span>
         </a>
     </td>
 
