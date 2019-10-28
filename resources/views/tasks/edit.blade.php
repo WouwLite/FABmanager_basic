@@ -75,16 +75,18 @@
             </div>
         </div>
         <div class="row">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <strong>DANGERZONE</strong>
-                </div>
-                <div class="panel-body">
-                    <p>Weet u het zeker?</p>
-                    {!! Form::open(array('class' => 'form-inline pull-right', 'method' => 'DELETE', 'route' => array('tasks.destroy', $task->id))) !!}
-                    {{ method_field('DELETE') }}
-                    {{Form::button('<span class="fa fa-trash fa-fw" aria-hidden="true"></span> <span class="hidden-xxs">Verwijderen</span> <span class="hidden-sm hidden-xs">Bestelling</span>', array('type' => 'submit', 'class' => 'btn btn-sm btn-danger'))}}
-                    {!! Form::close() !!}
+            <div class="col-md-10 col-md-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <strong>DANGERZONE</strong>
+                    </div>
+                    <div class="panel-body">
+                        <p>Weet u het heel zeker?</p>
+                        {!! Form::open(array('class' => 'form-inline', 'method' => 'DELETE', 'route' => array('tasks.destroy', $task->id))) !!}
+                        {{ method_field('DELETE') }}
+                        {{Form::button('<span class="fa fa-trash fa-fw" aria-hidden="true"></span> <span class="hidden-xxs">Verwijderen</span> <span class="hidden-sm hidden-xs">Bestelling</span>', array('type' => 'submit', 'class' => 'btn btn-sm btn-danger'))}}
+                        {!! Form::close() !!}
+                    </div>
                 </div>
             </div>
         </div>
