@@ -34,7 +34,7 @@
 
     </head>
     <body id="app-layout">
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
 
@@ -48,7 +48,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        Bckstage FAB
+                        <img src="https://cdn.wouwlite.eu/bckstage.nl/logo/bckstage-black.png" alt="Bckstage FAB">
                     </a>
                 </div>
 
