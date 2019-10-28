@@ -47,7 +47,7 @@
                             <table class="table table-striped task-table table-condensed">
                                 <thead>
                                     <th>Status</th>
-                                    <th></th>
+{{--                                    <th></th>--}}
                                     <th>Locatie</th>
                                     <th>Bestelling</th>
                                    <!-- <th>Aangemaakt</th> -->
