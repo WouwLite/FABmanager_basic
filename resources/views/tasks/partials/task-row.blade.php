@@ -22,7 +22,7 @@
     <!-- Task Edit Icon -->
     <td>
         <a href="{{ route('tasks.edit', $task->id) }}">
-            Aanpassen
+            Aanpassen bla
             <span class="fa fa-pencil fa-fw" aria-hidden="true"></span>
             <span class="sr-only">Aanpassen</span>
         </a>
