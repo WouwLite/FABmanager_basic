@@ -64,7 +64,7 @@
                     <div class="panel-footer">
                         <div class="row">
                             <div class="col-xs-12">
-                                <a href="{{ url('/tasks/create') }}" class="btn btn-sm btn-primary pull-right" type="button">
+                                <a href="{{ url('/tasks/create') }}" class="btn btn-sm btn-primary" type="button">
                                     <span class="fa fa-plus" aria-hidden="true"></span> Nieuwe bestelling
                                 </a>
                             </div>
