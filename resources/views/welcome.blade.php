@@ -8,7 +8,9 @@
                 <div class="panel-heading">Welkom</div>
 
                 <div class="panel-body">
-                    <a href="/login" class="btn btn-success btn-block btn-lg" role="button">Aanmelden</a>
+                    @if(Auth::guest())
+                        <a href="/login" class="btn btn-success btn-block btn-lg" role="button">Aanmelden</a>
+                    @endif()
                     <a href="/tasks-incomplete" class="btn btn-primary btn-block btn-lg" role="button">Bestellingen</a>
                 </div>
             </div>
