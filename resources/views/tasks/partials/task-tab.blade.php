@@ -7,10 +7,10 @@
         <table class="table table-striped task-table table-condensed">
             <thead>
                 <th>Status</th>
-                <th></th>
+{{--                <th></th>--}}
                 <th>Locatie</th>
                 <th>Bestelling</th>
-                <th>Tijd</th>
+{{--                <th>Tijd</th>--}}
             </thead>
             <tbody>
                 @foreach ($tasks as $task)
