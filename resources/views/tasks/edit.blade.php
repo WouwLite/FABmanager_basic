@@ -52,7 +52,7 @@
                             <!-- Add Task Button -->
                             <div class="form-group row">
                                 <div class="col-sm-offset-4 col-sm-6">
-                                     {{Form::button('<span class="fa fa-save fa-fw" aria-hidden="true"></span> <span class="hidden-xxs">Save</span> <span class="hidden-xs">Changes</span>', array('type' => 'submit', 'class' => 'btn btn-success btn-block'))}}
+                                     {{Form::button('<span class="fa fa-save fa-fw" aria-hidden="true"></span> <span class="hidden-xs">Bestelling</span> <span class="hidden-xxs">Opslaan</span>', array('type' => 'submit', 'class' => 'btn btn-success btn-block'))}}
                                 </div>
                             </div>
 
@@ -62,12 +62,12 @@
                     </div>
                     <div class="panel-footer">
                         <a href="{{ route('tasks.index') }}" class="btn btn-sm btn-info" type="button">
-                            <span class="fa fa-reply" aria-hidden="true"></span> Terug naar bestellingen
+                            <span class="fa fa-reply" aria-hidden="true"></span> Terug naar overzicht
                         </a>
 
                         {!! Form::open(array('class' => 'form-inline pull-right', 'method' => 'DELETE', 'route' => array('tasks.destroy', $task->id))) !!}
                             {{ method_field('DELETE') }}
-                            {{Form::button('<span class="fa fa-trash fa-fw" aria-hidden="true"></span> <span class="hidden-xxs">Delete</span> <span class="hidden-sm hidden-xs">Task</span>', array('type' => 'submit', 'class' => 'btn btn-danger'))}}
+                            {{Form::button('<span class="fa fa-trash fa-fw" aria-hidden="true"></span> <span class="hidden-xxs">Verwijderen</span> <span class="hidden-sm hidden-xs">Bestelling</span>', array('type' => 'submit', 'class' => 'btn btn-danger'))}}
                         {!! Form::close() !!}
 
                     </div>

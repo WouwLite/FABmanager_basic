@@ -109,7 +109,7 @@ class TasksController extends Controller
         $task['user_id'] = $user->id;
         Task::create($task);
 
-        return redirect('/tasks-incomplete')->with('success', 'Bestelling aangemaakt!');
+        return redirect('/tasks-incomplete')->with('success', 'Wooho! Een nieuwe bestelling!');
     }
 
     /**
@@ -156,7 +156,7 @@ class TasksController extends Controller
         $task->completed = $request->input('completed');
         $task->save();
 
-        return redirect('/tasks-incomplete')->with('success', 'Task Updated');
+        return redirect('/tasks-incomplete')->with('success', 'Aangepast');
     }
 
     /**
@@ -170,6 +170,6 @@ class TasksController extends Controller
     {
         Task::findOrFail($id)->delete();
 
-        return redirect('/tasks-incomplete')->with('success', 'Task Deleted');
+        return redirect('/tasks-incomplete')->with('success', 'Zo, opgeruimd staat netjes! Die is weg.');
     }
 }
