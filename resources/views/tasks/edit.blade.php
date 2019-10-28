@@ -52,7 +52,7 @@
                             <!-- Add Task Button -->
                             <div class="form-group row">
                                 <div class="col-sm-offset-4 col-sm-6">
-                                     {{Form::button('<span class="fa fa-save fa-fw" aria-hidden="true"></span> <span class="hidden-xs">Bestelling</span> <span class="hidden-xxs">Opslaan</span>', array('type' => 'submit', 'class' => 'btn btn-success btn-block'))}}
+                                     {{Form::button('<span class="fa fa-save fa-fw" aria-hidden="true"></span> <span class="hidden-xs">Bestelling</span> <span class="hidden-xxs">Opslaan</span>', array('type' => 'submit', 'class' => 'btn btn-lg btn-success btn-block'))}}
                                 </div>
                             </div>
 
