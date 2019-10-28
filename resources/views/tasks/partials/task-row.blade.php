@@ -21,14 +21,14 @@
 
     </td>
 
-    <!-- Task Edit Icon -->
-    <td>
-        <a href="{{ route('tasks.edit', $task->id) }}">
-            <span class="label label-info">
-                Aanpassen
-            </span>
-        </a>
-    </td>
+{{--    <!-- Task Edit Icon -->--}}
+{{--    <td>--}}
+{{--        <a href="{{ route('tasks.edit', $task->id) }}">--}}
+{{--            <span class="label label-info">--}}
+{{--                Aanpassen--}}
+{{--            </span>--}}
+{{--        </a>--}}
+{{--    </td>--}}
 
     <!-- Task Name -->
     <td class="table-text">
