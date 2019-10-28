@@ -7,7 +7,7 @@
 
             <a href="{{ route('tasks.edit', $task->id) }}">
                 <span class="label label-success">
-                    Afgeleverd
+                    Afgeleverd <i class="fas fa-wrench"></i>
                 </span>
             </a>
 
