@@ -34,7 +34,7 @@
 
     <!-- Task Name -->
     <td class="table-text">
-        <strong>{{ $task->name }}</strong>
+        <span class="label label-default">{{ $task->name }}</span>
     </td>
 
     <!-- Task Description -->
