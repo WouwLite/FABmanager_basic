@@ -7,7 +7,7 @@
 
             <a href="{{ route('tasks.edit', $task->id) }}">
                 <span class="label label-success">
-                    Afgeleverd <i class="fas fa-wrench"></i>
+                    Afgeleverd
                 </span>
             </a>
 
@@ -15,7 +15,7 @@
 
             <a href="{{ route('tasks.edit', $task->id) }}">
                 <span class="label label-danger">
-                    Open
+                    Open <i class="fas fa-wrench"></i>
                 </span>
             </a>
 
