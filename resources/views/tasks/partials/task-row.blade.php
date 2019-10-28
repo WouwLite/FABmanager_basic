@@ -15,7 +15,7 @@
 
             <a href="{{ route('tasks.edit', $task->id) }}">
                 <span class="label label-danger">
-                    Open <i class="fas fa-wrench"></i>
+                    Open <i class="fa fa-wrench"></i>
                 </span>
             </a>
 
