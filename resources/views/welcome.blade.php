@@ -13,6 +13,10 @@
                     @else
                         <a href="/tasks-incomplete" class="btn btn-primary btn-block btn-lg" role="button">Bestellingen</a>
                     @endif()
+
+                    @if(Auth::user()->3)
+                            <a href="/special/aafjednp-plattegrond" class="btn btn-default btn-block btn-lg" role="button">Plattegrond DNP</a>
+                    @endif
                 </div>
             </div>
         </div>

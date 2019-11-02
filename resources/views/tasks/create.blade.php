@@ -9,7 +9,7 @@
 
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    Create New Task
+                    Nieuwe bestelling aanmaken
                 </div>
                 <div class="panel-body">
 
@@ -18,7 +18,7 @@
                 </div>
                 <div class="panel-footer">
                     <a href="{{ route('tasks.index') }}" class="btn btn-sm btn-default" type="button">
-                        <span class="fa fa-reply" aria-hidden="true"></span> Back to Tasks
+                        <span class="fa fa-reply" aria-hidden="true"></span> Terug naar overzicht
                     </a>
                 </div>
             </div>
