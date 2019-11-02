@@ -36,6 +36,9 @@
                                     <a href="{{ url('/tasks-complete') }}" class="btn btn-sm btn-default {{ Request::is('tasks-complete') ? 'active' : '' }}" type="button">
                                         <span class="fa fa-check-square-o" aria-hidden="true"></span> <span class="hidden-xs">Afgehandeld</span>
                                     </a>
+                                    <a href="{{ url('/tasks-complete') }}" class="btn btn-sm btn-primary {{ Request::is('tasks-complete') ? 'active' : '' }}" type="button">
+                                        <span class="fa fa-plus" aria-hidden="true"></span> <span class="hidden-xs">Nieuw</span>
+                                    </a>
 
                                 </div>
 
