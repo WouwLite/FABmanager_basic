@@ -36,7 +36,6 @@
                                 {!! Form::label('updated_at', 'Laatste wijziging', array('class' => 'col-sm-3 col-sm-offset-1 control-label text-right')) !!}
                                 <div class="col-sm-6">
                                     {{ $task->updated_at }}
-                                    {!! Form::text('updated_at', null, array('class' => 'form-control')) !!}
                                 </div>
                             </div>
 
