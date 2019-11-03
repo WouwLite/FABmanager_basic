@@ -32,10 +32,10 @@
                                 </div>
                             </div>
 
-                            <div class="form-group row" disabled="disabled">
+                            <div class="form-group row">
                                 {!! Form::label('updated_at', 'Laatste wijziging', array('class' => 'col-sm-3 col-sm-offset-1 control-label text-right')) !!}
                                 <div class="col-sm-6">
-                                    {!! Form::textarea('updated_at', null, array('class' => 'form-control')) !!}
+                                    {!! Form::text('updated_at', null, array('class' => 'form-control disabled')) !!}
                                 </div>
                             </div>
 
