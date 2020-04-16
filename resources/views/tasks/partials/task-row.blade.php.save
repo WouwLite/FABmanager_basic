@@ -1,0 +1,56 @@
+<tr>
+
+    <!-- Task Status -->
+    <td>
+
+        @if ($task->completed === 1)
+
+            <a href="{{ route('tasks.edit', $task->id) }}">
+                <span class="label label-success">
+                    Verwerkt
+                </span>
+            </a>
+
+        @else
+
+            <a href="{{ route('tasks.edit', $task->id) }}">
+                <span class="label label-danger">
+                    Open <i class="fa fa-wrench"></i>
+                </span>
+            </a>
+
+            <a href="{{ route('tasks.edit', $task->id) }}">
+                <span class="label label-success">
+                    <i class="fa fa-check"></i>
+                </span>
+            </a>
+
+        @endif
+
+    </td>
+
+    <td>
+
+        @if ($task->completed === 0)
+            knopje?
+
+        @endif
+
+    </td>
+
+    <!-- Task Name -->
+    <td class="table-text">
+        <span class="label label-default">{{ $task->name }}</span>
+    </td>
+
+    <!-- Task Description -->
+    <td>
+        {{ $task->description }}
+    </td>
+
+    <!-- Task Description -->
+    <td>
+        {{ $task->patchnumber }}
+    </td>
+
+</tr>

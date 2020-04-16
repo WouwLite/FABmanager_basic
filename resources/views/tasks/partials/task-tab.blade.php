@@ -8,8 +8,9 @@
             <thead>
                 <th>Status</th>
 {{--                <th></th>--}}
-                <th>Locatie</th>
-                <th>Bestelling</th>
+                <th>Ruimte</th>
+                <th>MAC adres</th>
+                <th>Patchnummer</th>
 {{--                <th>Tijd</th>--}}
             </thead>
             <tbody>

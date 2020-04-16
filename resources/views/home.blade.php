@@ -8,9 +8,9 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    Je bent ingelogd!
+                    Je bent aangemeld!
                     <br>
-                    <a href="/tasks-incomplete" class="btn btn-primary btn-block btn-lg" role="button">Bestellingen</a>
+                    <a href="/tasks-incomplete" class="btn btn-primary btn-block btn-lg" role="button">Apparaten</a>
                 </div>
             </div>
         </div>

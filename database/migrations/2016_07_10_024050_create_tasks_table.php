@@ -17,7 +17,11 @@ class CreateTasksTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('name');
-            $table->text('description')->default('');
+            $table->string('type');
+            $table->string('description')->default('');
+            $table->string('ip');
+            $table->string('patchnumber')->default('');
+            $table->boolean('is_patched')->default(false);
             $table->boolean('completed')->default(false);
             $table->timestamps();
         });

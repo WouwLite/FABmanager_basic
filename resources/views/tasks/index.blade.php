@@ -9,12 +9,12 @@
 
             @if (count($tasks) > 0)
 
-                <a href="/tasks-incomplete" class="btn btn-primary btn-block btn-lg" role="button">Openstaande bestellingen</a>
+                <a href="/tasks-incomplete" class="btn btn-primary btn-block btn-lg" role="button">Nog niet verwerkte apparaten</a>
                 <br>
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Create New Task
+                        Nieuw apparaat toevoegen
                     </div>
                     <div class="panel-body">
 
@@ -31,9 +31,9 @@
                     </ul>
                     <div id="my-tab-content" class="tab-content">
 
-                        @include('tasks/partials/task-tab', array('tab' => 'all', 'tasks' => $tasks, 'title' => 'All Tasks', 'status' => 'active'))
-                        @include('tasks/partials/task-tab', array('tab' => 'incomplete', 'tasks' => $tasksInComplete, 'title' => 'Incomplete Tasks'))
-                        @include('tasks/partials/task-tab', array('tab' => 'complete', 'tasks' => $tasksComplete, 'title' => 'Complete Tasks'))
+                        @include('tasks/partials/task-tab', array('tab' => 'overzicht', 'tasks' => $tasks, 'title' => 'Overzicht', 'status' => 'active'))
+                        @include('tasks/partials/task-tab', array('tab' => 'niet verwerkt', 'tasks' => $tasksInComplete, 'title' => 'Niet verwerkt'))
+                        @include('tasks/partials/task-tab', array('tab' => 'afgehandeld', 'tasks' => $tasksComplete, 'title' => 'Afgehandeld'))
 
                     </div>
                 </div>
@@ -41,7 +41,7 @@
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Create New Task
+                        Nieuw apparaat toevoegen
                     </div>
                     <div class="panel-body">
 

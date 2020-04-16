@@ -16,13 +16,13 @@
                             <div class="col-xs-12">
 
                                 @if (Request::is('tasks-all'))
-                                    Alle bestellingen
+                                    Alle apparaten
                                 @elseif (Request::is('tasks-incomplete'))
-                                    Openstaande bestellingen
+                                    Nog niet verwerkte apparaten
                                 @elseif (Request::is('tasks-complete'))
-                                    Afgehandelde bestellingen
+                                    Verwerkte apparaten
                                 @else
-                                    Geen bestellingen
+                                    Geen apparaten
                                 @endif
 
                                 <div class="pull-right">
@@ -37,7 +37,7 @@
                                         <span class="fa fa-check-square-o" aria-hidden="true"></span> <span class="hidden-xs">Afgehandeld</span>
                                     </a>
                                     <a href="{{ url('/tasks/create') }}" class="btn btn-sm btn-primary" type="button">
-                                        <span class="fa fa-plus" aria-hidden="true"></span> <span class="hidden-xs">Nieuwe bestelling</span>
+                                        <span class="fa fa-plus" aria-hidden="true"></span> <span class="hidden-xs">Nieuw apparaat</span>
                                     </a>
 
                                 </div>
@@ -50,9 +50,11 @@
                             <table class="table table-striped task-table table-condensed">
                                 <thead>
                                     <th>Status</th>
+                                    <th>Vink</th>
 {{--                                    <th></th>--}}
-                                    <th>Locatie</th>
-                                    <th>Bestelling</th>
+                                    <th>Ruimte</th>
+                                    <th>MAC adres</th>
+                                    <th>Patchnummer</th>
                                    <!-- <th>Aangemaakt</th> -->
                                 </thead>
                                 <tbody>
@@ -68,7 +70,7 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <a href="{{ url('/tasks/create') }}" class="btn btn-primary btn-block" type="button">
-                                    <span class="fa fa-plus" aria-hidden="true"></span> Nieuwe bestelling
+                                    <span class="fa fa-plus" aria-hidden="true"></span> Nieuw apparaat
                                 </a>
                             </div>
                         </div>
@@ -80,7 +82,7 @@
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Nieuwe bestelling aanmaken
+                        Nieuw apparaat toevoegen
                     </div>
                     <div class="panel-body">
 

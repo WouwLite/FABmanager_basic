@@ -9,7 +9,7 @@
 
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    Nieuwe bestelling aanmaken
+                    Nieuw apparaat toevoegen
                 </div>
                 <div class="panel-body">
 

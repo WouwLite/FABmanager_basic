@@ -10,8 +10,12 @@ use Illuminate\Http\Request;
 class TasksController extends Controller
 {
     protected $rules = [
-        'name' 			      => 'required|max:60',
-        'description'   => 'max:155',
+        'name' 			=> 'required|max:100',
+        'type'          => 'max:50', // Add required when it's implemented, please.
+        'description'   => 'max:100',
+        'ip'            => 'max:20',
+        'patchnumber'   => 'max:100',
+        'is_patched'    => 'numeric',
         'completed'    	=> 'numeric',
 
     ];
@@ -109,7 +113,7 @@ class TasksController extends Controller
         $task['user_id'] = $user->id;
         Task::create($task);
 
-        return redirect('/tasks-incomplete')->with('success', 'Wooho! Een nieuwe bestelling!');
+        return redirect('/tasks-incomplete')->with('success', 'Wooho! Het is gelukt! We hebben een nieuw apparaat toegevoegd!');
     }
 
     /**
@@ -151,9 +155,13 @@ class TasksController extends Controller
         $this->validate($request, $this->rules);
 
         $task = Task::findOrFail($id);
-        $task->name = $request->input('name');
-        $task->description = $request->input('description');
-        $task->completed = $request->input('completed');
+        $task->name = $request->input('name'); // Ruimte waar het product zich bevind (jaja, de naam is onlogisch)
+//        $task->type = $request->input('type'); // Het type product (VOS / VIOS / Telefonie / Etc)
+        $task->description = $request->input('description'); // Het MAC adres van het product
+//        $task->ip = $request->input('ip'); // Het (vooraf bedachte) IP adres van het product
+        $task->patchnumber = $request->input('patchnumber'); // Het patchnummer van het product
+//        $task->patched = $request->input('is_patched'); // Of het product is gepatcht (nieuw)
+        $task->completed = $request->input('completed'); // Of het product is verwerkt
         $task->save();
 
         return redirect('/tasks-incomplete')->with('success', 'Aangepast');
