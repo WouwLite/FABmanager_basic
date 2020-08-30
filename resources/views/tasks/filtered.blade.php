@@ -50,10 +50,10 @@
                             <table class="table table-striped task-table table-condensed">
                                 <thead>
                                     <th>Status</th>
-                                    <th>Vink</th>
+{{--                                    <th>Vink</th>--}}
 {{--                                    <th></th>--}}
                                     <th>Ruimte</th>
-                                    <th>MAC adres</th>
+                                    <th>MAC/SWI/Overig</th>
                                     <th>Patchnummer</th>
                                    <!-- <th>Aangemaakt</th> -->
                                 </thead>

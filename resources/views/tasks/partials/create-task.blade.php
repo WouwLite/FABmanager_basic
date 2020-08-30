@@ -11,17 +11,17 @@
     </div>
 
     <!-- Type -->
-    <div class="form-group">
-        <label for="task-name" class="col-sm-3 control-label">Type</label>
+{{--    <div class="form-group">--}}
+{{--        <label for="task-name" class="col-sm-3 control-label">Type</label>--}}
 
-        <div class="col-sm-6">
-            <input type="text" name="type" id="type" class="form-control" value="{{ old('task') }}" disabled>
-        </div>
-    </div>
+{{--        <div class="col-sm-6">--}}
+{{--            <input type="text" name="type" id="type" class="form-control" value="{{ old('task') }}" disabled>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <!-- MAC address -->
     <div class="form-group">
-        <label for="task-description" class="col-sm-3 control-label">MAC adres</label>
+        <label for="task-description" class="col-sm-3 control-label">MAC/SWI/Overige info</label>
 
         <div class="col-sm-6">
 {{--            <trix-editor input="description"></trix-editor>--}}
@@ -30,13 +30,13 @@
     </div>
 
     <!-- IP Address -->
-    <div class="form-group">
-        <label for="task-name" class="col-sm-3 control-label">IP Adres</label>
+{{--    <div class="form-group">--}}
+{{--        <label for="task-name" class="col-sm-3 control-label">IP Adres</label>--}}
 
-        <div class="col-sm-6">
-            <input type="text" name="ip" id="ip" class="form-control" value="{{ old('task') }}" disabled>
-        </div>
-    </div>
+{{--        <div class="col-sm-6">--}}
+{{--            <input type="text" name="ip" id="ip" class="form-control" value="{{ old('task') }}" disabled>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <!-- Patchnumber -->
     <div class="form-group">
@@ -47,14 +47,14 @@
         </div>
     </div>
 
-    <!-- Is patched -->
-    <div class="form-group">
-        <label for="task-name" class="col-sm-3 control-label">Gepatched</label>
+{{--    <!-- Is patched -->--}}
+{{--    <div class="form-group">--}}
+{{--        <label for="task-name" class="col-sm-3 control-label">Gepatched</label>--}}
 
-        <div class="col-sm-6">
-            <input type="text" name="is_patched" id="is_patched" class="form-control" value="{{ old('task') }}" disabled>
-        </div>
-    </div>
+{{--        <div class="col-sm-6">--}}
+{{--            <input type="text" name="is_patched" id="is_patched" class="form-control" value="{{ old('task') }}" disabled>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <!-- Add Task Button -->
     <div class="form-group">

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Van Breda MACTOOL</title>
+        <title>Bckstage Patch Tool</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
@@ -50,7 +50,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="https://cdn.wouwlite.eu/vbz.app/logo/logo-woonzorginnovatie.png" alt="Van Breda MACTOOL" height="30px">
+                        <img src="https://cdn.wouwlite.eu/bckstage.nl/logo/bckstage-black.png" alt="Bckstage Patch Tool" height="30px">
                     </a>
                 </div>
 
@@ -75,11 +75,10 @@
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li class="{{ Request::is('tasks') ? 'active' : '' }}"><a href="{{ url('/tasks') }}"><i class="fa fa-btn fa-tasks" aria-hidden="true"></i>Overzicht</a></li>
-                                    <li class="{{ Request::is('tasks-all') ? 'active' : '' }}"><a href="{{ url('/tasks-all') }}"><i class="fa fa-btn fa-filter" aria-hidden="true"></i>Huidige bestellingen</a></li>
-                                    <li class="{{ Request::is('tasks-incomplete') ? 'active' : '' }}"><a href="{{ url('/tasks-incomplete') }}"><i class="fa fa-btn fa-square-o" aria-hidden="true"></i>Openstaande bestellingen</a></li>
-                                    <li class="{{ Request::is('tasks-complete') ? 'active' : '' }}"><a href="{{ url('/tasks-complete') }}"><i class="fa fa-btn fa-check-square-o" aria-hidden="true"></i>Afgehandelde bestellingen</a></li>
+                                    <li class="{{ Request::is('tasks-incomplete') ? 'active' : '' }}"><a href="{{ url('/tasks-incomplete') }}"><i class="fa fa-btn fa-square-o" aria-hidden="true"></i>Openstaand</a></li>
+                                    <li class="{{ Request::is('tasks-complete') ? 'active' : '' }}"><a href="{{ url('/tasks-complete') }}"><i class="fa fa-btn fa-check-square-o" aria-hidden="true"></i>Afgehandeld</a></li>
                                     <hr>
-                                    <li class="{{ Request::is('tasks/create') ? 'active' : '' }}"><a href="{{ url('/tasks/create') }}"><i class="fa fa-btn fa-plus" aria-hidden="true"></i>Nieuwe bestelling</a></li>
+                                    <li class="{{ Request::is('tasks/create') ? 'active' : '' }}"><a href="{{ url('/tasks/create') }}"><i class="fa fa-btn fa-plus" aria-hidden="true"></i>Nieuw apparaat</a></li>
                                 </ul>
                             </li>
 

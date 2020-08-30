@@ -22,6 +22,11 @@ Route::auth();
 // USER HOMEPAGE ROUTE
 Route::get('/home', 'HomeController@index');
 
+// NEW FEATURES ROUTE
+Route::get('/nieuwefeatures', function () {
+    return view('nieuwefeatures');
+});
+
 // USER TASKS ROUTES
 Route::resource('/tasks', 'TasksController');
 Route::get('/tasks-all', 'TasksController@index_all');

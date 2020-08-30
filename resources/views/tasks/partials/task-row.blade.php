@@ -19,28 +19,29 @@
                 </span>
             </a>
 
-            <a href="{{ route('tasks.edit', $task->id) }}">
-                <span class="label label-success">
-                    <i class="fa fa-check"></i>
-                </span>
-            </a>
-
         @endif
 
-    </td>
+{{--    </td>--}}
 
-    <td>
+{{--    <td>--}}
 
-        @if ($task->completed === 0)
-            test
+{{--        @if ($task->completed === 0)--}}
 
-        @endif
+{{--            <span class="label label-success">--}}
+{{--                <label for="status">--}}
+{{--                    {!! Form::checkbox('completed', 1, null, ['id' => 'status']) !!} {!! Form::submit('Vink') !!}--}}
+{{--                </label>--}}
+{{--            </span>--}}
 
-    </td>
+{{--        @endif--}}
+
+{{--    </td>--}}
 
     <!-- Task Name -->
     <td class="table-text">
-        <span class="label label-default">{{ $task->name }}</span>
+        <span class="label label-primary">
+            <strong>{{ $task->name }}</strong>
+        </span>
     </td>
 
     <!-- Task Description -->

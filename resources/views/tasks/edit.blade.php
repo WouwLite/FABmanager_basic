@@ -26,7 +26,7 @@
 
 
                             <div class="form-group row">
-                                {!! Form::label('description', 'MAC adres', array('class' => 'col-sm-3 col-sm-offset-1 control-label text-right')) !!}
+                                {!! Form::label('description', 'MAC/SWI/Overige info', array('class' => 'col-sm-3 col-sm-offset-1 control-label text-right')) !!}
                                 <div class="col-sm-6">
                                     {!! Form::text('description', null, array('class' => 'form-control')) !!}
                                 </div>
@@ -42,7 +42,7 @@
                             <div class="form-group row">
                                 {!! Form::label('updated_at', 'Laatste wijziging', array('class' => 'col-sm-3 col-sm-offset-1 control-label text-right')) !!}
                                 <div class="col-sm-6">
-                                    {{ $task->updated_at }}
+                                    <span class="label label-default">{{ $task->updated_at }}</span>
                                 </div>
                             </div>
 

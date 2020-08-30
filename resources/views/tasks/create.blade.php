@@ -6,6 +6,9 @@
 
             <!-- Display Validation Errors -->
             @include('common.status')
+            <div class="alert alert-info" role="alert">
+                Binnenkort komen er nieuwe features! Wil je weten welke? <a href="/nieuwefeatures" class="alert-link">Check dan deze link</a>. Give it a click if you like.
+            </div>
 
             <div class="panel panel-default">
                 <div class="panel-heading">
